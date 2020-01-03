@@ -1,0 +1,99 @@
+Question no 1
+
+Answer: OBJECT ORIENTED PROGRAMMING:
+Object-oriented programming (OOP) refers to a type of computer programming (software design) in which programmers define the data type of a data structure, and also the types of operations (functions) that can be applied to the data structure. In this way, the data structure becomes an object that includes both data and functions. In addition, programmers can create relationships between one object and another. For example, objects can inherit characteristics from other objects.
+
+Question no 2
+
+Answer: BENIFITS OF OOP:
+1.	Simplicity: software objects model real world objects, so the complexity is reduced and the program structure is very clear
+2.	Modularity: each object forms a separate entity whose internal workings are decoupled from other parts of the system;
+3.	Modifiability: it is easy to make minor changes in the data representation or the procedures in an OO program. Changes inside a class do not affect any other part of a program, since the only public interface that the external world has to a class is through the use of methods;
+4.	Extensibility: adding new features or responding to changing operating environments can be solved by introducing a few new objects and modifying some existing ones;
+5.	Maintainability: objects can be maintained separately, making locating and fixing problems easier;
+6.	Re-usability: objects can be reused in different programs.
+
+Question no 3
+
+Answer: DIFFERENCE BETWEEN FUNCTION AND METHOD:
+
+Functions
+
+1>Function is block of code that is also called by its name. (independent)
+2>The function can have different parameters or may not have any at all. If any data (parameters) are passed, they are passed explicitly.
+3>It may or may not return any data.
+4>Function does not deal with Class and its instance concept.
+
+Method
+
+1>Method is called by its name, but it is associated to an object (dependent).
+2>A method is implicitly passed the object on which it is invoked.
+3>It may or may not return any data.
+4>A method can operate on the data (instance variables) that is contained by the corresponding class.
+
+Question no 4
+
+Answer: Following are the terms:
+1. CLASS:
+         A class is a code template for creating objects. Objects have member variables and have behaviour associated with them. In python a class is created by the keyword class.
+
+An object is created using the constructor of the class. This object will then be called the instance of the class. In Python we create instances in the following manner 
+
+2. OBJECT:
+          Python is an object oriented programming language. Unlike procedure oriented programming, where the main emphasis is on functions, object oriented programming stress on objects. Object is simply a collection of data (variables) and methods (functions) that act on those data. And, class is a blueprint for the object.
+          
+3. ATTRIBUTE:
+             The class attribute specifies one or more classnames for an element. The class attribute is mostly used to point to a class in a style sheet. However, it can also be used by a JavaScript (via the HTML DOM) to make changes to HTML elements with a specified class.
+             
+4. BEHAVIOUR:
+             Behaviour provides a language suitable for Behaviour Driven Development (BDD), as opposed to post-coding unit testing. It operates as a facade over Python’s unit testing framework.
+
+Question no 5
+
+Write a code in python in which create a class named it Car which
+have 5 attributes such like (model, color and name etc.) and 3
+methods. And create 5 object instance from that class.
+
+Answer: Code:
+
+import datetime # we will use this for date objects
+
+class Car:
+
+    def __init__(self, make, name, model, colour, headlight):
+        self.make = make
+        self.name = name
+        self.model = model
+        self.colour = colour
+        self.headlight = headlight
+
+    # create class methods
+    def start(self):
+        print ("Engine started")
+
+    def go(self):
+        print ("Car is ready to go...")   
+        
+    def stop(self):
+        print ("Engine switched off")
+
+car = Car(
+      "Mercidez"
+      ,"c200"
+      ,2008
+      ,"Black"
+      ,"Blue"
+)
+
+print(car.make)
+print(car.name)
+print(car.model)
+print(car.colour)
+print(car.headlight)
+
+	Output:
+Mercidez
+c200
+2008
+Black
+Blue
